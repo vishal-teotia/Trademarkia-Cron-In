@@ -1,9 +1,9 @@
 import sys
 import pytest
 
-from project_name import create_app
-from project_name.ext.commands import populate_db
-from project_name.ext.database import db
+from trademarkia_cron_in import create_app
+from trademarkia_cron_in.ext.commands import populate_db
+from trademarkia_cron_in.ext.database import db
 
 
 @pytest.fixture(scope="session")

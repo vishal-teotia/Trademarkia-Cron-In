@@ -15,10 +15,10 @@ echo "Project URL name: $urlname";
 echo "Description: $description";
 
 echo "Rendering the Flask template..."
-original_author="author_name"
-original_name="project_name"
-original_urlname="project_urlname"
-original_description="project_description" 
+original_author="vishal-teotia"
+original_name="trademarkia_cron_in"
+original_urlname="Trademarkia-Cron-In"
+original_description="Awesome trademarkia_cron_in created by vishal-teotia" 
 TEMPLATE_DIR="./.github/templates/flask"
 for filename in $(find ${TEMPLATE_DIR} -name "*.*" -not \( -name "*.git*" -prune \) -not \( -name "apply.sh" -prune \)) 
 do
@@ -48,7 +48,7 @@ fi
 # Move module files
 rm -rf "${name}"
 rm -rf tests
-cp -R ${TEMPLATE_DIR}/project_name "${name}"
+cp -R ${TEMPLATE_DIR}/trademarkia_cron_in "${name}"
 cp -R ${TEMPLATE_DIR}/tests tests
 
 cp ${TEMPLATE_DIR}/README.md README.md
@@ -66,12 +66,12 @@ then
     make install
     echo "Applied Flask template"
     echo "Ensure you activate your env with 'source .venv/bin/activate'"
-    echo "then run 'project_name' or 'python -m project_name'"
+    echo "then run 'trademarkia_cron_in' or 'python -m trademarkia_cron_in'"
 else
     poetry install
     echo "Applied Flask template"
     echo "Ensure you activate your env with 'poetry shell'"
-    echo "then run 'project_name' or 'python -m project_name' or 'poetry run project_name'"
+    echo "then run 'trademarkia_cron_in' or 'python -m trademarkia_cron_in' or 'poetry run trademarkia_cron_in'"
 fi
 
 echo "README.md has instructions on how to use this Flask application."
